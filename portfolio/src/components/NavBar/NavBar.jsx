@@ -1,14 +1,39 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import styled from "styled-components";
+import colors from "../utils/colors";
 
+const Contenedor = styled.div`
+  background-color: ${colors.principal};
+  color: ${colors.quinto};
+  height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+`;
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  font-size: 4vh;
+  font-weight: light;
+  font-family: Lato;
+  &:visited {
+    color: ${colors.quinto};
+    text-decoration: none;
+  }
+`;
 export default function NavBar() {
   return (
-    <div>
-      <div>NavBar</div>
-      <Link to='/about'>Sobre mi</Link>
-      <Link to='/projects'>Proyectos</Link>
-      <Link to='/skills'>Tecnologías</Link>
-      <Link to='/contact'>Contacto</Link>
-    </div>
+    <Contenedor>
+      <StyledLink style={{ fontFamily: "Monofett", lineHeight: 0.75 }} to='/'>
+        ROQUE <br />
+        IVAN
+        <br />
+        MOYANO
+      </StyledLink>
+      <StyledLink to='/about'>Sobre mi</StyledLink>
+      <StyledLink to='/projects'>Proyectos</StyledLink>
+      <StyledLink to='/skills'>Tecnologías</StyledLink>
+      <StyledLink to='/contact'>Contacto</StyledLink>
+    </Contenedor>
   );
 }
