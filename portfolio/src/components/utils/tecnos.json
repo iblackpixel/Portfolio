@@ -1,0 +1,38 @@
+[
+  {
+    "image": "https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg",
+    "title": "JavaScript"
+  },
+  {
+    "image": "https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg",
+    "title": "HTML 5"
+  },
+  {
+    "image": "https://github.com/devicons/devicon/blob/master/icons/css3/css3-original-wordmark.svg",
+    "title": "CSS 3"
+  },
+  {
+    "image": "https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg",
+    "title": "React"
+  },
+  {
+    "image": "https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original-wordmark.svg",
+    "title": "NodeJS"
+  },
+  {
+    "image": "https://github.com/devicons/devicon/blob/master/icons/postgresql/postgresql-original-wordmark.svg",
+    "title": "PostgreSQL"
+  },
+  {
+    "image": "https://github.com/devicons/devicon/blob/master/icons/redux/redux-original.svg",
+    "title": "Redux"
+  },
+  {
+    "image": "https://github.com/devicons/devicon/blob/master/icons/sequelize/sequelize-original-wordmark.svg",
+    "title": "Sequelize"
+  },
+  {
+    "image": "https://github.com/devicons/devicon/blob/master/icons/express/express-original-wordmark.svg",
+    "title": "Express Js"
+  }
+]
