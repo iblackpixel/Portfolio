@@ -6,6 +6,7 @@ import colors from "../utils/colors";
 const Contenedor = styled.div`
   display: flex;
   height: 10vh;
+  width: 100%;
   background-color: ${colors.principal};
   color: ${colors.quinto};
   justify-content: space-evenly;

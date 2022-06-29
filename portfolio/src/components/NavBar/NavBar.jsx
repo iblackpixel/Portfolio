@@ -7,6 +7,7 @@ const Contenedor = styled.div`
   background-color: ${colors.principal};
   color: ${colors.quinto};
   height: 15vh;
+  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
