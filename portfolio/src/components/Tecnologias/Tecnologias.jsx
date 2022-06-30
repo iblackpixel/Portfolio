@@ -3,10 +3,19 @@ import styled from "styled-components";
 import Card from "../Cards/Card";
 import Cards from "../Cards/Cards";
 
-const Contenedor = styled.div``;
-const Title = styled.h1`
-  display: flex;
+const Contenedor = styled.div`
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0.5vh;
+  padding: 0.5vh;
+`;
+const Title = styled.div`
+  margin: 1vh;
+  text-decoration: none;
+  font-size: 4vh;
+  font-weight: light;
   font-family: Lato;
 `;
 

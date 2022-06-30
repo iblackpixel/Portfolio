@@ -33,7 +33,6 @@ export default function NavBar() {
       </StyledLink>
       <StyledLink to='/about'>Sobre mi</StyledLink>
       <StyledLink to='/projects'>Proyectos</StyledLink>
-      <StyledLink to='/skills'>Tecnologías</StyledLink>
       <StyledLink to='/contact'>Contacto</StyledLink>
     </Contenedor>
   );

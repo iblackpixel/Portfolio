@@ -6,6 +6,13 @@ const ContenedorSuperior = styled.div`
   display: flex;
   flex-direction: column;
 `;
+const Title = styled.div`
+  margin: 1vh;
+  text-decoration: none;
+  font-size: 4vh;
+  font-weight: light;
+  font-family: Lato;
+`;
 const Contenedor = styled.div`
   display: flex;
   flex-direction: row;
@@ -23,7 +30,7 @@ function Projects() {
     "Infusion Store es un ecommerce de infusiones hecho en React con app movil generada en React Native. Proyecto grupal final Bootcamp SoyHenry.";
   return (
     <ContenedorSuperior>
-      <h1>Mis Proyectos</h1>
+      <Title>MIS PROYECTOS</Title>
       <Contenedor>
         <Project
           title='Henry Dogs'

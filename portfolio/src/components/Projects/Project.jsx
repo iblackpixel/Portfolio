@@ -7,12 +7,13 @@ const Contenedor = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: ${colors.secundario};
+  border-style: inset;
+  border-color: ${colors.secundario};
   height: 50vh;
   width: 40vh;
-  margin: 0.5vh;
+  margin: 5 vh;
   padding: 0.5vh;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
 `;
 const Title = styled.div`
   margin: 1vh;
@@ -49,11 +50,16 @@ const LinkDeploy = styled.a`
   font-weight: light;
   font-family: Lato;
   margin: 2vh;
-  background-color: ${colors.terciario};
-  margin: 0.2rem;
+  border-style: solid;
+  border-color: ${colors.terciario};
+  margin: 0.4rem;
   border-radius: 0.5rem;
   color: ${colors.terciario};
   &:visited {
+    color: ${colors.principal};
+    text-decoration: none;
+  }
+  &:hover {
     color: ${colors.principal};
     text-decoration: none;
   }
