@@ -6,7 +6,7 @@ const ContenedorCartas = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.4vh;
-  grid-auto-rows: minmax(40vh, auto);
+  grid-auto-rows: minmax(25vh, auto);
 `;
 
 const auxiliar = [
