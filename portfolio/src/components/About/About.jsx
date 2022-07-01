@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import colors from "../utils/colors";
 
 const Contenedor = styled.div`
   display: flex;
@@ -17,6 +18,7 @@ const Title = styled.div`
   font-size: 4vh;
   font-weight: light;
   font-family: Lato;
+  color: ${colors.cuarto};
 `;
 const ContenedorTexto = styled.div`
   display: flex;
