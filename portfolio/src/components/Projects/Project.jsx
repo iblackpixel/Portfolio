@@ -11,7 +11,7 @@ const Contenedor = styled.div`
   border-color: ${colors.secundario};
   height: 50vh;
   width: 40vh;
-  margin: 5 vh;
+  margin: 2vh;
   padding: 0.5vh;
   border-radius: 1rem;
 `;

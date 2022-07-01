@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Card from "../Cards/Card";
 import Cards from "../Cards/Cards";
+import colors from "../utils/colors";
 
 const Contenedor = styled.div`
   flex-direction: row;
@@ -17,6 +18,7 @@ const Title = styled.div`
   font-size: 4vh;
   font-weight: light;
   font-family: Lato;
+  color: ${colors.cuarto};
 `;
 
 function Tecnologias() {
