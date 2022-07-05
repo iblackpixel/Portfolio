@@ -21,9 +21,16 @@ const Contenedor = styled.div`
   justify-content: center;
   align-items: center;
   height: 60vh;
-  width: 100%;
+  width: 100vw;
   margin: 0.5vh;
   padding: 0.5vh;
+  @media screen and (max-width: 660px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 120vh;
+  }
 `;
 function Projects() {
   const descriptionHD =

@@ -14,14 +14,15 @@ const Title = styled.h2`
   font-size: 2vh;
   font-weight: light;
   font-family: Lato;
-  width: 30%;
+  width: 30vw;
   &:hover {
     cursor: default;
   }
 `;
 const ContenedorImg = styled.img`
-  object-fit: fill;
+  object-fit: contain;
   height: 18vh;
+  width: 25vw;
 `;
 
 export default function Card({ image, title }) {

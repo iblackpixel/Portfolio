@@ -5,7 +5,10 @@ import styled from "styled-components";
 import colors from "../utils/colors";
 
 const Contenedor = styled.div`
-  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh;
   color: ${colors.quinto};
 `;
 const ContactForm = styled.form`
@@ -17,13 +20,50 @@ const Seccional = styled.div`
   display: flex;
   flex-direction: row;
 `;
-const StyledLabel = styled.label`
-  height: 1.6rem;
-  width: 40%;
+
+const StyledInput = styled.input`
+  height: 4vh;
+  width: 50vw;
+  margin: 2vh;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: Lato;
+  color: ${colors.cuarto};
 `;
-const StyledInput = styled.input``;
-const SendButton = styled.input``;
-const StyledTextArea = styled.textarea``;
+const SendButton = styled.input`
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 2vh;
+  font-weight: light;
+  font-family: Lato;
+  margin: 2vh;
+  border-style: solid;
+  border-color: ${colors.terciario};
+  margin: 0.4rem;
+  border-radius: 0.5rem;
+  color: ${colors.terciario};
+  width: 25vw;
+  height: 4vh;
+  &:visited {
+    color: ${colors.principal};
+    text-decoration: none;
+  }
+  &:hover {
+    color: ${colors.principal};
+    text-decoration: none;
+  }
+  @media screen and (max-width: 660px) {
+    width: 25vw;
+  }
+`;
+const StyledTextArea = styled.textarea`
+  height: 25vh;
+  width: 50vw;
+  margin: 2vh;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: Lato;
+`;
 
 export default function Contact() {
   const form = useRef();
@@ -52,18 +92,15 @@ export default function Contact() {
     <Contenedor>
       <ContactForm ref={form} onSubmit={sendEmail}>
         <Seccional>
-          <StyledLabel htmlFor='nombre'>Nombre</StyledLabel>
-          <StyledInput type='text' name='user_name' />
+          <StyledInput type='text' name='user_name' placeholder='Nombre' />
         </Seccional>
         <Seccional>
-          <StyledLabel htmlFor='email'>Correo</StyledLabel>
-          <StyledInput type='email' name='user_email' />
+          <StyledInput type='email' name='user_email' placeholder='Email' />
         </Seccional>
         <Seccional>
-          <StyledLabel htmlFor='message'>Mensaje</StyledLabel>
-          <StyledTextArea name='message' />
+          <StyledTextArea name='message' placeholder='Mensaje' />
         </Seccional>
-        <SendButton type='submit' value='Send' />
+        <SendButton type='submit' value='Enviar' />
       </ContactForm>
     </Contenedor>
   );

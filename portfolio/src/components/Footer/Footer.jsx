@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
 import colors from "../utils/colors";
 
 const Contenedor = styled.div`
@@ -12,11 +12,9 @@ const Contenedor = styled.div`
   justify-content: space-evenly;
   align-items: center;
 `;
-const StyledLink = styled(Link)`
+const StyledLink = styled.a`
   text-decoration: none;
-  font-size: 4vh;
-  font-weight: light;
-  font-family: Lato;
+  font-size: 9vh;
   color: ${colors.quinto};
   &:visited {
     color: ${colors.quinto};
@@ -27,8 +25,15 @@ const StyledLink = styled(Link)`
 function Footer() {
   return (
     <Contenedor>
-      <StyledLink to='/Github'>Github</StyledLink>
-      <StyledLink to='/Linkedin'>LinkedIn</StyledLink>
+      <StyledLink href='https://github.com/iblackpixel' target='_blank'>
+        <FaGithubSquare />
+      </StyledLink>
+      <StyledLink
+        href='https://www.linkedin.com/in/roque-ivan-moyano-tucuman/'
+        target='_blank'
+      >
+        <FaLinkedin />
+      </StyledLink>
     </Contenedor>
   );
 }
