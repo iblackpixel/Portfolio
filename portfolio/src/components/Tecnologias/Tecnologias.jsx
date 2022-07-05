@@ -8,7 +8,7 @@ const Contenedor = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   margin: 0.5vh;
   padding: 0.5vh;
 `;

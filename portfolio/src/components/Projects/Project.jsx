@@ -10,10 +10,14 @@ const Contenedor = styled.div`
   border-style: inset;
   border-color: ${colors.secundario};
   height: 50vh;
-  width: 40vh;
+  width: 40vw;
   margin: 2vh;
   padding: 0.5vh;
   border-radius: 1rem;
+  @media screen and (max-width: 660px) {
+    height: 55vh;
+    width: 60vw;
+  }
 `;
 const Title = styled.div`
   margin: 1vh;
@@ -25,14 +29,21 @@ const Title = styled.div`
 const ContenedorImagen = styled.div`
   display: flex;
   height: 30vh;
-  width: 30vh;
+  width: 30vw;
   object-fit: contain;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width: 660px) {
+    width: 40vw;
+  }
 `;
 const ImageUrl = styled.img`
   height: 25vh;
-  width: 25vh;
+  width: 30vw;
+  object-fit: contain;
+  @media screen and (max-width: 660px) {
+    width: 40vw;
+  }
 `;
 const ContenedorLinks = styled.div`
   display: flex;
@@ -44,7 +55,7 @@ const LinkDeploy = styled.a`
   justify-content: center;
   align-items: center;
   height: 4vh;
-  width: 10vh;
+  width: 15 vw;
   text-decoration: none;
   font-size: 2vh;
   font-weight: light;
@@ -63,6 +74,9 @@ const LinkDeploy = styled.a`
     color: ${colors.principal};
     text-decoration: none;
   }
+  @media screen and (max-width: 660px) {
+    width: 25vw;
+  }
 `;
 const Description = styled.a`
   text-decoration: none;
@@ -70,13 +84,19 @@ const Description = styled.a`
   font-weight: light;
   font-family: Lato;
   height: 10 vh;
-  width: 30vh;
+  width: 40vw;
+  @media screen and (max-width: 660px) {
+    width: 50vw;
+  }
 `;
 const ContenedorDescription = styled.div`
   display: flex;
   height: 20vh;
-  width: 30vh;
+  width: 40vw;
   margin: 1.5vh;
+  @media screen and (max-width: 660px) {
+    width: 50vw;
+  }
 `;
 function Project({ title, url, repo, description, image }) {
   return (

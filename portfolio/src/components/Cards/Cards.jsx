@@ -5,8 +5,8 @@ import Card from "./Card";
 const ContenedorCartas = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 0.4vh;
-  grid-auto-rows: minmax(25vh, auto);
+  grid-gap: 0.2vh;
+  grid-auto-rows: minmax(22vw, auto);
 `;
 
 const auxiliar = [
