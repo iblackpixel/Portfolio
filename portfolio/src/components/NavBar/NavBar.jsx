@@ -46,6 +46,7 @@ const Menu = styled.div`
   }
 `;
 const StyledHome = styled(Link)`
+  color: ${colors.quinto};
   text-decoration: none;
   font-size: 2.5rem;
   font-weight: light;
@@ -56,6 +57,7 @@ const StyledHome = styled(Link)`
   }
 `;
 const StyledLink = styled(Link)`
+  color: ${colors.quinto};
   text-decoration: none;
   font-size: 2.2rem;
   font-weight: light;
